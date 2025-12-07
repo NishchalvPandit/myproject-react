@@ -1,0 +1,76 @@
+.programs {
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+}
+
+.programs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin-top: 60px;
+}
+
+.program-card {
+    text-align: center;
+    padding: 40px 30px;
+}
+
+.program-icon {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    display: inline-block;
+    animation: bounce 2s ease-in-out infinite;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.program-card h3 {
+    font-size: 1.5rem;
+    color: var(--text-light);
+    margin-bottom: 15px;
+}
+
+.program-description {
+    color: #999;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.program-features {
+    list-style: none;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.program-features li {
+    color: #ccc;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.check-icon {
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.program-card .btn {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .programs-grid {
+        grid-template-columns: 1fr;
+    }
+}
